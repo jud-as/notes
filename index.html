@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>may 19</title>
+
+    <style>
+
+        * {
+            margin: 0; 
+            padding: 0;   
+            list-style: none;
+            box-sizing: border-box;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        } 
+
+        body {
+            background-color: #e5e5e5;
+            color: #000000;
+            
+        }
+
+        .header {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: #BF2431;
+            display: flex;
+            justify-content:space-between;
+            z-index: 100;
+            box-shadow: 2px 2px 15px 2px #000;
+        }
+
+        .logo {
+            font-size: 28px;
+            color: #e9e9e9;
+            text-decoration: none;
+            font-weight: 500;
+            text-shadow: 2px 2px 2px #000;
+        }
+
+        .navbar a {
+            font-size: 20px;
+            color: #F2BC8D;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #e5e5e5;
+            text-shadow: 1px 1px 5px #000
+        }
+
+        .home {
+           
+            height: 100vh;
+            display:flex;
+            align-items: center;
+            padding: 0 10%;
+        }
+        img {
+        
+            position: relative;
+            background: red;
+            display: block;
+            top: -10cm;
+            left:18cm;
+        }
+
+        .home-content {
+            max-width: 600px;
+        }
+
+        .home-content h3 {
+            font-size: 56px;
+        }
+
+        .home-content p {
+            font-size: 22px;
+        }
+            
+        .home-content .btn-box {
+            width: 135px;
+            height: 50px;
+        }
+
+        .btn-box a {
+        color: #BF2431;
+        display: inline-flex;
+        width: 210px;
+        height: 100%;
+        text-decoration: none;
+        font-size: 19px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Fahrenheit.</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">Latest</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+           <h3>Câmara aprova Dia Nacional do Físico, em 19 de maio: </h3>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis soluta ipsa magnam minus ut deserunt repudiandae, sequi veniam dolorum enim fugit deleniti nesciunt reiciendis totam eligendi porro qui maxime!</p>
+            <p> ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptatem laborum earum culpa ipsum ullam assumenda nisi animi provident recusandae consectetur fuga, possimus non corrupti soluta repudiandae! Quasi, doloribus deserunt!</p>
+            <img src="images/home-image-300.jpg" alt="Imagem dia do físico">
+        </div> 
+    </section>
+
+</body>
+
+</html>
