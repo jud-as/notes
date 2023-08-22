@@ -1,0 +1,25 @@
+Barramento BUS {
+	Trasf. dados e energia; {
+		Sinais (0, 1); {
+			Conj. sinais formam bits, bytes, etc...;
+		}
+	}
+	
+	Largura de barramento {
+		Qntd. de linhas de barramento impressas num hardware;
+		<preço<linhas.barramento<vel.transmissão.de.dados;
+	}
+	
+	Barramento é tudo aquilo que trasf. dados;
+
+	Bottleneck {
+		Engarrafamento, gargalo na comunicação, limitando a máxima vazão de dados (throughput) para dispositivos de i/o;		
+	}
+	
+	Slot =! Barramento {
+		Slots são conectores existentes na placa mãe, usados para conexão de placas de expansão {
+			Placa de vídeo; Placa de rede; Placa de som; etc...;
+		}
+	} 
+	
+}
