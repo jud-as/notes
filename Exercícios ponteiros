@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/*
+typedef struct {
+	float peso;
+	int idade;
+	float altura;
+}Pessoa;
+
+
+void imprimePessoa (Pessoa P){
+	printf("Idade: %d, Peso: %f, Altura: %f", P.idade, P.peso, P.altura);
+
+}
+
+void setPessoa(Pessoa *P,int idade, float peso, float altura) {
+	(*P).idade = idade;
+	P->peso = peso;
+	P-> = altura;
+}
+
+int main() {
+	Pessoa Joao;
+	setPessoa(&Joao,25,78.50, 1.75);
+	imprimePessoa(Joao);
+	return 0;
+} */
+
+
+
+
+
+///////UTILIZANDO, AGORA, STRINGS E CONST CHAR/////////////////
+
+
+
+
+
+typedef struct {
+	
+	char titulo[10];
+	int classificacao;
+	char diretor[10];
+	char genero[10];
+	char duracao[10];
+}Filme;
+
+void imprimeFilme (Filme F) {
+	printf("Titulo: %s, Classificação: %d, Diretor: %s, Genero: %s, Duração: %s", F.titulo, F.classificacao, F.diretor, F.genero, F.duracao);
+	
+}
+ 
+    Filme setFilme(const char *Titulo, int Classificacao, const char *Diretor, const char *Genero, const char *Duracao) {
+    	
+	Filme F;
+	F.classificacao = Classificacao;
+	strcpy(F.titulo, Titulo);
+	strcpy(F.diretor, Diretor);
+	strcpy(F.genero, Genero);
+	strcpy(F.duracao, Duracao);
+	
+	return F;
+}
+
+int main(void) {
+	
+	Filme exemplo;
+	exemplo = setFilme("Bastardos", 5, "Tarantino", "Acao", "02h35m45s");
+	imprimeFilme(exemplo);
+	return 0;
+}
+
